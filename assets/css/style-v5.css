@@ -3040,68 +3040,6 @@ lord-icon {
     border-radius: 0;
 }
 
-/* Smooth infinite scroll */
-.new-carousel-primary {
-    animation: scroll-left 15s linear infinite;
-}
-
-.new-carousel-secondary {
-    animation: scroll-right 15s linear infinite;
-}
-
-/* Keyframes for left scroll */
-@keyframes scroll-left {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-/* Keyframes for right scroll */
-@keyframes scroll-right {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(50%);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .new-carousel-primary img, .new-carousel-secondary img {
-        width: 150px;
-        height: 100px;
-    }
-
-    .new-carousel-primary {
-        animation: scroll-left 20s linear infinite;
-    }
-
-    .new-carousel-secondary {
-        animation: scroll-right 20s linear infinite;
-        animation-delay: 6s;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .new-carousel-primary img, .new-carousel-secondary img {
-        width: 100px;
-        height: 75px;
-        margin: 0 5px;
-    }
-
-    .new-carousel-primary {
-        animation: scroll-left 15s linear infinite;
-    }
-
-    .new-carousel-secondary {
-        animation: scroll-right 15s linear infinite;
-        animation-delay: 5s;
-    }
-}
-
 
 
 
@@ -3139,91 +3077,88 @@ lord-icon {
 
 .new-carousel-primary img, .new-carousel-secondary img {
     flex-shrink: 0;
-    width: 300px;  /* Adjust this width to make sure it matches your container size 
-.new-carousel-primary img, .new-carousel-secondary img {
+    width: 300px;  /* Adjust this width to make sure it matches your container size */
+}
+/* .new-carousel-primary img, .new-carousel-secondary img {
     height: 180px;
     margin: 0 10px;
     border: 2px solid #D0A0;
     object-fit: cover;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+/* === Carousel Animations === */
+.new-carousel-primary,
+.new-carousel-secondary {
+    animation-duration: 15s;      
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
+
 .new-carousel-primary {
-    animation: scroll-left 15s linear infinite;  /* Slower speed for primary carousel */
+    animation-name: scroll-left;
 }
 
 .new-carousel-secondary {
-    animation: scroll-right 15s linear infinite; /* Opposite direction for secondary carousel */
+    animation-name: scroll-right;
 }
 
-
+/* === Keyframes for scrolling === */
 @keyframes scroll-left {
-    from{
+    from {
         transform: translateX(0);
     }
-    to{
+    to {
         transform: translateX(-100%);
     }
 }
 
 @keyframes scroll-right {
-    0% {
-        transform: translateX(0);  /* Start at the beginning */
+    from {
+        transform: translateX(0);
     }
-    100% {
-        transform: translateX(100%); /* Same idea for right scrolling */
+    to {
+        transform: translateX(33%);
     }
 }
 
-
-/* .new-carousel-primary:hover,
+/* === Pause animation on hover === */
+.new-carousel-primary:hover,
 .new-carousel-secondary:hover {
     animation-play-state: paused;
-} */
+}
 
+/* === Responsive Images === */
 @media screen and (max-width: 768px) {
-    .new-carousel-primary img, .new-carousel-secondary img {
+    .new-carousel-primary img,
+    .new-carousel-secondary img {
         width: 150px;
         height: 100px;
-    }
-
-    .new-carousel-primary {
-        animation: scroll-left 12s linear infinite;
-    }
-
-    .new-carousel-secondary {
-        animation: scroll-right 12s linear infinite;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .new-carousel-primary img, .new-carousel-secondary img {
+    .new-carousel-primary img,
+    .new-carousel-secondary img {
         width: 100px;
         height: 75px;
     }
+}
 
-    .new-carousel-primary {
-        animation: scroll-left 10s linear infinite;
-    }
-
-    .new-carousel-secondary {
-        animation: scroll-right 10s linear infinite;
-    }
-} 
-
-.com-pat{
+/* === Misc Styling === */
+.com-pat {
     margin-left: 120px;
 }
 
-.coming-soon{
+.coming-soon {
     text-align: center;
     font-size: 25px;
     margin-bottom: 20px;
 }
 
-.landing-date{
+.landing-date {
     text-align: center;
-    /* background-color: black; */
     font-size: 26px;
-    font-style: underline;
+    text-decoration: underline;
     margin-top: 35px;
 }

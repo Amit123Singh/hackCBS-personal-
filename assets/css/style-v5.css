@@ -3027,14 +3027,13 @@ lord-icon {
 .new-carousel-primary, .new-carousel-secondary {
     display: flex;
     flex-direction: row;
-    white-space: nowrap;
 }
 
 .new-carousel-primary img, .new-carousel-secondary img {
     width: 200px;
     height: 150px;
     margin: 0 10px;
-    border: 2px solid #D0A022;
+    border: 2px solid #007e81;
     object-fit: cover;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 0;
@@ -3055,70 +3054,44 @@ lord-icon {
     margin: 0 auto;
 }
 
+
+
+/* Carousal ======================================================== */
 .new-scroll-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    gap: 20px;
 }
-
-.new-carousel-primary{
-    display: inline-block;
-    justify-content: left;
-    white-space: nowrap;
-}
-.new-carousel-secondary {
-    display: flex;
-    justify-content: right;
-    white-space: nowrap;
-}
-
 .new-carousel-primary img, .new-carousel-secondary img {
     flex-shrink: 0;
-    width: 300px;  /* Adjust this width to make sure it matches your container size */
+    width: 300px;
 }
-/* .new-carousel-primary img, .new-carousel-secondary img {
-    height: 180px;
-    margin: 0 10px;
-    border: 2px solid #D0A0;
-    object-fit: cover;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-} */
 
 /* === Carousel Animations === */
 .new-carousel-primary,
 .new-carousel-secondary {
-    animation-duration: 15s;      
+    animation-duration: 24s;      
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 .new-carousel-primary {
-    animation-name: scroll-left;
+    animation-name: scroll-right;
+    width: max-content !important;
+
 }
 
 .new-carousel-secondary {
     animation-name: scroll-right;
+    animation-direction: reverse;
+    width: max-content !important;
 }
 
 /* === Keyframes for scrolling === */
-@keyframes scroll-left {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
 @keyframes scroll-right {
-    from {
-        transform: translateX(0);
-    }
     to {
-        transform: translateX(25%);
+        transform: translateX(calc(-50%));
     }
 }
 
@@ -3127,6 +3100,15 @@ lord-icon {
 .new-carousel-secondary:hover {
     animation-play-state: paused;
 }
+
+
+
+
+
+
+
+
+
 
 /* === Responsive Images === */
 @media screen and (max-width: 768px) {
@@ -3140,10 +3122,15 @@ lord-icon {
 @media screen and (max-width: 480px) {
     .new-carousel-primary img,
     .new-carousel-secondary img {
-        width: 100px;
-        height: 75px;
+        width: 150px;
+        height: 100px;
     }
 }
+
+
+
+
+
 
 /* === Misc Styling === */
 .com-pat {

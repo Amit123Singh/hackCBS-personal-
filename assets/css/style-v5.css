@@ -3066,6 +3066,13 @@ lord-icon {
 .new-carousel-primary img, .new-carousel-secondary img {
     flex-shrink: 0;
     width: 300px;
+    transition: 600ms ease;
+}
+.new-carousel-primary img:hover{
+    transform: scale(1.1);
+}
+.new-carousel-secondary img:hover{
+    transform: scale(1.1);
 }
 
 /* === Carousel Animations === */

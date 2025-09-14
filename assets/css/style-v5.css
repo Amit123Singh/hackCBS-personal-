@@ -2318,14 +2318,17 @@ h4.hack-prize-heading {
 }
 
 /* Here it starts */
-
 #teams {
     background-color: #040709;
-    background-image: url('../img/new_assets/mtt_bg.png'); 
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
+        url('../img/new_assets/mtt_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+
 
 #teams img {
     margin: 5px;

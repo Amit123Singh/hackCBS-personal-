@@ -61,61 +61,74 @@
 </head>
 
 <body class=home>
-
-        <!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p> <![endif]-->
-    <div class="progress-bar progress"></div>
-
     <div class="lgx-container ">
         <header>
-            <div id=lgx-header class=lgx-header>
-                <div class="lgx-header-position lgx-header-position-white lgx-header-position-fixed ">
-                    <div class=lgx-container-fluid>
-                        <nav class="navbar navbar-default lgx-navbar">
-                            <div class=navbar-header> <button type=button class="navbar-toggle collapsed"
-                                    data-toggle=collapse data-target="#navbar" aria-expanded=false aria-controls=navbar>
-                                    <span class=sr-only>Toggle navigation</span> <span class=icon-bar></span> <span
-                                        class=icon-bar></span> <span class=icon-bar></span> </button>
-                                <div class=lgx-logo>
-                                    <a href="#home-section" class=lgx-scroll>
-                                        <!-- <img src="assets/img/logo5.0-new.png" id="top-logo-img" alt="hackCBS Logo" /> 
-                                         -->
-                                        <img src="./assets/img/8.0_assets/hackCBS8.0_logo_coloured.png" id="top-logo-img" alt="hackCBS Logo" />
 
-                                    </a>
-                                </div>
-                            </div>
-                            <div id=navbar class="navbar-collapse collapse lgx-3">
-                                <ul class="nav navbar-nav mr-auto  lgx-nav mt-3">
-                                    <li class="nav-item"><a class=lgx-scroll href="#about">About</a></li>
+                <!-- Navbar  -->
+                <div class="nav-container">
+    
+                        <nav class="navbar">
+                            <a href="#" class="nav-branding">
+                                <img src="./assets/img/8.0_assets/hackCBS8.0_logo_coloured.png" alt="">
+                            </a>
+                            
+                            <ul class="nav-menu">
+                                <li class="nav-item" style="--delay:1">
+                                    <a href="#about" class="nav-link">ABOUT</a>
+                                </li>
+                                <li class="nav-item" style="--delay:2">
+                                    <a href="#themes" class="nav-link">THEMES</a>
+                                </li>
+                                <li class="nav-item" style="--delay:3">
+                                    <a href="#prizes" class="nav-link">PRIZES</a>
+                                </li>
+                                <li class="nav-item" style="--delay:4">
+                                    <a href="#schedule" class="nav-link">SCHEDULE</a>
+                                </li>
+                                <li class="nav-item" style="--delay:5">
+                                    <a href="#sponsors" class="nav-link">SPONSORS</a>
+                                </li>
+                                <li class="nav-item" style="--delay:6">
+                                    <a href="#teams" class="nav-link">TEAM</a>
+                                </li>
+                                <li class="nav-item" style="--delay:7">
+                                    <a href="#faq" class="nav-link">FAQ's</a>
+                                </li>
+                                <li class="nav-item" style="--delay:8">
+                                    <a href="#contact" class="nav-link">CONTACT</a>
+                                </li>
+                            </ul>
 
-                                    <!-- <li><a class=lgx-scroll href="#workshops">Workshops</a></li> -->
-                                    <li class="nav-item"><a class=lgx-scroll href="#themes">Themes</a></li>
-                                    <li class="nav-item"><a class=lgx-scroll href="#prizes">Prizes</a></li>
-                                    <li class="nav-item"><a class=lgx-scroll href="#schedule">Schedule</a></li>
-                                    <li class="nav-item"><a class=lgx-scroll href="#sponsors">Sponsors</a></li>
-                                    <li class="nav-item"><a class=lgx-scroll href="#teams">Team</a></li>
-                                    <li class="nav-item"><a class=lgx-scroll href="#faq">FAQ'<span class="text-lowercase">s</span></a></li>
-                                    <li class="nav-item"><a class=lgx-scroll href="#contact">Contact</a></li>
-                                </ul>
+                            <a id="mlh-trust-badge-logo"
+                            href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=red" target="_blank">
+                            <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-red.svg"alt="Major League Hacking 2025 Hackathon Season" style="width:100%"></a>
+
+                            <div class="hamburger off">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
                             </div>
+
+                            
                         </nav>
-                    </div>
                 </div>
-            </div>
+
+
         </header>
 
         <section class="banner-parallax">
             <div class="video-container">
                 <video autoplay muted loop id="background-video">
-                    <source src="assets/videos/dark_video.mp4" type="video/mp4">
+                    <source src="assets/videos/Ghost_theme_video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
 
             <div class="home_container" id="home-section">
                 <div class="home_date-container">
-                    <div class="banner-video-overlay" style="margin-top: 3rem;">
-                        <img src="assets/img/8.0_assets/hackCBS8.0-new.png" class="hackcbs_landing">
+                    <div style="width: 100vw;" class="banner-video-overlay" style="margin-top: 3rem;">
+                        <img src="assets/img/8.0_assets/hackCBS8.0-banner.svg" class="hackcbs_landing">
+                        <!-- <img src="assets/img/8.0_assets/hackCBS8.0-new.png" class="hackcbs_landing"> -->
                     </div>
                     <div class="home_main-text">
                         <div class="home_hackCBS">
@@ -132,12 +145,29 @@
                     </div>
                 </div>
 
-                <div class="home_button-container">
+                <div class="home_button-container" style="  position: relative;
+  z-index: 5;font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 1.3rem 3rem;">
                     <!-- <a target="_blank" href="https://hackcbs-7.devfolio.co/"> -->
-                    <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe0idpYEXLVESZYOiKf5DdALxOc_XrtPCQ4ipLMPW2c-d6bow/viewform?usp=sharing&ouid=114161617178980203312">
+
+                    <!-- Interest Form button  -->
+                    <!-- <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe0idpYEXLVESZYOiKf5DdALxOc_XrtPCQ4ipLMPW2c-d6bow/viewform?usp=sharing&ouid=114161617178980203312">
                         <button class="button-register banner-button-style">
-                            <i class="fa-solid fa-up-right-from-square"></i>&nbsp;Interest Form</button>
-                    </a>
+                            <i class="fa-solid fa-up-right-from-square"></i>&nbsp Interest Form</button>
+                    </a> -->
+
+
+                     <!-- Devfolio button -->
+                    <div 
+                        class="apply-button" 
+                        data-hackathon-slug="hackcbs-8" 
+                        data-button-theme="dark-inverted"
+                        style="height: 48px; width: 312px;"
+                    ></div>
+
+
                     <a href="https://discord.gg/AfVYrSemzB" target="_blank">
                         <button class="button-discord banner-button-style">
                             <i class="fa-brands fa-discord"></i>&nbsp;Discord Server
@@ -145,28 +175,10 @@
                     </a>
                 </div>
 
-                <!-- Devfolio button -->
-                <div>
-                        <div 
-                            class="apply-button" 
-                            data-hackathon-slug="hackcbs-8" 
-                            data-button-theme="light"
-                            style="height: 44px; width: 312px"
-                        ></div>
-                </div>
+               
 
             </div>
         </section>
-
-        <div class="hidden-sm hidden-xs"> </div>
-        <div class=" hidden-xl">
-            <a id="mlh-trust-badge"
-                style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
-                href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=red"
-                target="_blank"><img
-                    src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-red.svg"
-                    alt="Major League Hacking 2025 Hackathon Season" style="width:100%"></a>
-        </div>
 
         
         <section class="pb100 pt100" id="about">
@@ -179,9 +191,9 @@
                         </div>
                         <div id="about-div">
                             
-                            <p>Embarking on the next chapter of an exhilarating legacy, we present <b>hackCBS 8.0</b>! This ultimate blend of coders, innovators, designers, and tech-connoisseurs is a celebration of expertise and creativity that promises an unparalleled experience.Get ready to embark on an exciting journey, overcoming challenges with innovative solutions! </p><br>
+                            <p style="text-align: justify; margin-right: 20px;">Embarking on the next chapter of an exhilarating legacy, we present <b>hackCBS 8.0</b>! This ultimate blend of coders, innovators, designers, and tech-connoisseurs is a celebration of expertise and creativity that promises an unparalleled experience.Get ready to embark on an exciting journey, overcoming challenges with innovative solutions! </p><br>
                                 
-                            <p>The event is a mega-fest of hackers racing against time for intensive development. This edition promises to redefine the boundaries of what is possible in hacking, where grandeur meets innovation.</p>
+                            <p style="text-align: justify; margin-right: 20px;" >The event is a mega-fest of hackers racing against time for intensive development. This edition promises to redefine the boundaries of what is possible in hacking, where grandeur meets innovation.</p>
                             <br />
                             
                             <p><b>Venue</b>[In-Person] - Shaheed Sukhdev College of Business Studies</p>
@@ -190,7 +202,7 @@
                     </div>
                     <!-- Ship Image Section -->
                     <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
-                        <img src="assets/img/new_assets/building-new.png" alt="Event Ship Image" class="img-fluid medium-ship">
+                        <img src="assets/img/new_assets/building.png" alt="Building Image" class="img-fluid medium-ship">
                     </div>
                 </div>
                 <!-- Stats Section -->
@@ -302,8 +314,8 @@
             <div class="section_title">
                 <h3 class="title-dark" data-aos="fade-right" data-aos-duration="1000"
                 data-aos-anchor-placement="top-bottom">
-                Glimpses <span class="text-lowercase">of hack</span>CBS <br>
-                <span class="previous_ed text-capitalize">Previous Editions</span>
+                Glimpses <span>OF <span class="text-lowercase">hack</span></span><span>CBS</span><br>
+                <!-- <span class="previous_ed text-capitalize">Previous Editions</span> -->
                 </h3>
             </div>
         </div>
@@ -311,39 +323,39 @@
         <div class="new-scroll-container">
             
             <div class="new-carousel-primary">
-                <img src="assets/img/glimpses/1-min.jpg" alt="img1" />
-                <img src="assets/img/glimpses/2-min.jpg" alt="img2" />
-                <img src="assets/img/glimpses/3-min.jpg" alt="img3" />
-                <img src="assets/img/glimpses/10-min.jpg" alt="img4" />
-                <img src="assets/img/glimpses/5-min.jpg" alt="img5" />
-                <img src="assets/img/glimpses/hackcbsph.jpg" alt="img6" />
-                <img src="assets/img/glimpses/7-min.jpg" alt="img7" />
+                <img src="assets/img/glimpses/1-min.webp" alt="img1" />
+                <img src="assets/img/glimpses/2-min.webp" alt="img2" />
+                <img src="assets/img/glimpses/3-min.webp" alt="img3" />
+                <img src="assets/img/glimpses/10-min.webp" alt="img4" />
+                <img src="assets/img/glimpses/5-min.webp" alt="img5" />
+                <img src="assets/img/glimpses/13-min.webp" alt="img6" />
+                <img src="assets/img/glimpses/7-min.webp" alt="img7" />
 
-                <img src="assets/img/glimpses/1-min.jpg" alt="img1" />
-                <img src="assets/img/glimpses/2-min.jpg" alt="img2" />
-                <img src="assets/img/glimpses/3-min.jpg" alt="img3" />
-                <img src="assets/img/glimpses/10-min.jpg" alt="img4" />
-                <img src="assets/img/glimpses/5-min.jpg" alt="img5" />
-                <img src="assets/img/glimpses/hackcbsph.jpg" alt="img6" />
-                <img src="assets/img/glimpses/7-min.jpg" alt="img7" />
+                <img src="assets/img/glimpses/1-min.webp" alt="img1" />
+                <img src="assets/img/glimpses/2-min.webp" alt="img2" />
+                <img src="assets/img/glimpses/3-min.webp" alt="img3" />
+                <img src="assets/img/glimpses/10-min.webp" alt="img4" />
+                <img src="assets/img/glimpses/5-min.webp" alt="img5" />
+                <img src="assets/img/glimpses/13-min.webp" alt="img6" />
+                <img src="assets/img/glimpses/7-min.webp" alt="img7" />
                 
             </div>
             <div class="new-carousel-secondary">
-                <img src="assets/img/glimpses/8-min.jpg" alt="img8" />
-                <img src="assets/img/glimpses/9-min.jpg" alt="img9" />
-                <img src="assets/img/glimpses/4-min.jpg" alt="img10" />
-                <img src="assets/img/glimpses/11-min.jpeg" alt="img11" />
-                <img src="assets/img/glimpses/hackcbs3ph.jpeg" alt="img12" />
-                <img src="assets/img/glimpses/14-min.jpg" alt="img13" />
-                <img src="assets/img/glimpses/SCR-20240930-tkpz.jpeg" alt="img14" />
+                <img src="assets/img/glimpses/8-min.webp" alt="img8" />
+                <img src="assets/img/glimpses/9-min.webp" alt="img9" />
+                <img src="assets/img/glimpses/4-min.webp" alt="img10" />
+                <img src="assets/img/glimpses/11-min.webp" alt="img11" />
+                <img src="assets/img/glimpses/6-min.webp" alt="img12" />
+                <img src="assets/img/glimpses/14-min.webp" alt="img13" />
+                <img src="assets/img/glimpses/12-min.webp" alt="img14" />
 
-                <img src="assets/img/glimpses/8-min.jpg" alt="img8" />
-                <img src="assets/img/glimpses/9-min.jpg" alt="img9" />
-                <img src="assets/img/glimpses/4-min.jpg" alt="img10" />
-                <img src="assets/img/glimpses/11-min.jpeg" alt="img11" />
-                <img src="assets/img/glimpses/hackcbs3ph.jpeg" alt="img12" />
-                <img src="assets/img/glimpses/14-min.jpg" alt="img13" />
-                <img src="assets/img/glimpses/SCR-20240930-tkpz.jpeg" alt="img14" />
+                <img src="assets/img/glimpses/8-min.webp" alt="img8" />
+                <img src="assets/img/glimpses/9-min.webp" alt="img9" />
+                <img src="assets/img/glimpses/4-min.webp" alt="img10" />
+                <img src="assets/img/glimpses/11-min.webp" alt="img11" />
+                <img src="assets/img/glimpses/6-min.webp" alt="img12" />
+                <img src="assets/img/glimpses/14-min.webp" alt="img13" />
+                <img src="assets/img/glimpses/12-min.webp" alt="img14" 
                 
             </div>
         </div>
@@ -367,7 +379,7 @@
                             <div class="col-md-3 col-xs-6 col-sm-6" style="padding: 0px" data-aos="zoom-in-up"
                                 data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
                                 <div class=lgx-gallery-single>
-                                    <figure> <img src="assets/img/themes_new/Cloud.svg" alt=Cloud loading=lazy>
+                                    <figure> <img src="assets/img/themes_new/Cloud.png" alt=Cloud loading=lazy>
                                         <figcaption class=lgx-figcaption>
                                             <div class=lgx-hover-link>
                                                 <div class=lgx-vertical>
@@ -381,7 +393,7 @@
                             <div class="col-md-3 col-xs-6 col-sm-6" style="padding: 0px" data-aos="zoom-in-up"
                                 data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
                                 <div class=lgx-gallery-single>
-                                    <figure> <img src="assets/img/themes_new/EdTech.svg" alt=EdTech loading=lazy>
+                                    <figure> <img src="assets/img/themes_new/EdTech.png" alt=EdTech loading=lazy>
                                         <figcaption class=figcaption>
                                             <div class=lgx-hover-link>
                                                 <div class=lgx-vertical>
@@ -395,7 +407,7 @@
                             <div class="col-md-3 col-xs-6 col-sm-6" style="padding: 0px" data-aos="zoom-in-up"
                                 data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
                                 <div class=lgx-gallery-single>
-                                    <figure> <img src="assets/img/themes_new/AI.svg" alt=AI loading=lazy>
+                                    <figure> <img src="assets/img/themes_new/AI.png" alt=AI loading=lazy>
                                         <figcaption class=lgx-figcaption>
                                             <div class=lgx-hover-link>
                                                 <div class=lgx-vertical>
@@ -409,7 +421,7 @@
                             <div class="col-md-3 col-xs-6 col-sm-6" style="padding: 0px" data-aos="zoom-in-up"
                                 data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
                                 <div class=lgx-gallery-single>
-                                    <figure> <img src="assets/img/themes_new/Fintech.svg" alt=Productivity
+                                    <figure> <img src="assets/img/themes_new/Fintech.png" alt=Productivity
                                             loading=lazy>
                                         <figcaption class=lgx-figcaption>
                                             <div class=lgx-hover-link>
@@ -424,7 +436,7 @@
                             <div class="col-md-3 col-xs-6 col-sm-6" style="padding: 0px" data-aos="zoom-in-up"
                                 data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
                                 <div class=lgx-gallery-single>
-                                    <figure> <img src="assets/img/themes_new/IOT.svg" alt="IOT" loading=lazy>
+                                    <figure> <img src="assets/img/themes_new/IOT.png" alt="IOT" loading=lazy>
                                         <figcaption class=lgx-figcaption>
                                             <div class=lgx-hover-link>
                                                 <div class=lgx-vertical>
@@ -438,7 +450,7 @@
                             <div class="col-md-3 col-xs-6 col-sm-6" style="padding: 0px" data-aos="zoom-in-up"
                                 data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
                                 <div class=lgx-gallery-single>
-                                    <figure> <img src="assets/img/themes_new/Health Care.svg" alt="Health Care" loading=lazy>
+                                    <figure> <img src="assets/img/themes_new/Health Care.png" alt="Health Care" loading=lazy>
                                         <figcaption class=lgx-figcaption>
                                             <div class=lgx-hover-link>
                                                 <div class=lgx-vertical>
@@ -452,7 +464,7 @@
                             <div class="col-md-3 col-xs-6 col-sm-6" style="padding: 0px;" data-aos="zoom-in-up"
                                 data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
                                 <div class=lgx-gallery-single>
-                                    <figure> <img src="assets/img/themes_new/OpenInnovation.svg" alt="Open Innovation"
+                                    <figure> <img src="assets/img/themes_new/OpenInnovation.png" alt="Open Innovation"
                                             loading=lazy>
                                         <figcaption class=lgx-figcaption>
                                             <div class=lgx-hover-link>
@@ -467,7 +479,7 @@
                             <div class="col-md-3 col-xs-6 col-sm-6" style="padding: 0px" data-aos="zoom-in-up"
                                 data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
                                 <div class=lgx-gallery-single>
-                                    <figure> <img src="assets/img/themes_new/web.svg" alt="Web3" loading=lazy>
+                                    <figure> <img src="assets/img/themes_new/web.png" alt="Web3" loading=lazy>
                                         <figcaption class=lgx-figcaption>
                                             <div class=lgx-hover-link>
                                                 <div class=lgx-vertical>
@@ -559,43 +571,47 @@
             <div class="section_title">
                 <h3 class="title-dark" data-aos="fade-right" data-aos-duration="1000"
                     data-aos-anchor-placement="top-bottom">
-                    LAST EDITION'S PRIZES
+                    PRIZES
                 </h3>
             </div>
         </div>
+
         <div class="container">
+
+            <!-- I have hidden all the "know more" buttons for now -->
+
             <div class="row">
                 <div class="col-md-4 prize-card" data-aos="fade-up" data-aos-duration="1000"
                     data-aos-anchor-placement="top-bottom">
                     <div class="main">
+
                         <div class="service">
                             <div class="service-logo first-logo"> <img src="assets/img/first.png" alt="1st"></div>
                             <h4 class="prize-heading">First Prize</h4>
-                            <p> Total Prize of Worth <b>$15,000</b></p>
-                            <p> Cash Prize of <b>INR 45,000</b></p>
-                            <div class="prizes-btn" style="margin-top: 15px;"><button class="cta" data-toggle="modal"
-                                    data-target="#prize1_modal">
-                                    <span class="hover-underline-animation"> Know more </span>
-
-                                </button></div>
+                            <p> Total Prize Worth <b>$15,000</b></p>
+                            <p> Cash Prize of <b>INR 40,000</b></p>
+                            <div class="prizes-btn" style="margin-top: 15px;">
+                            <!-- <button class="cta" data-toggle="modal" data-target="#prize1_modal"> <span class="hover-underline-animation"> Know more </span></button> -->
+                             <div class="filler" style="height: 40px;"></div>
+                        </div>
                         </div>
                         <div class="shadowOne"></div>
                         <div class="shadowTwo"></div>
                     </div>
                 </div>
+
                 <div class="col-md-4 prize-card" data-aos="fade-up" data-aos-duration="1000"
                     data-aos-anchor-placement="top-bottom">
                     <div class="main">
                         <div class="service">
                             <div class="service-logo second-logo"> <img src="assets/img/second.png" alt="2nd"></div>
                             <h4 class="prize-heading">Second Prize</h4>
-                            <p> Total Prize of Worth <b>$12,500</b></p>
-                            <p> Cash Prize of <b>INR 35,000</b></p>
-                            <div class="prizes-btn" style="margin-top: 15px;"> <button class="cta" data-toggle="modal"
-                                    data-target="#prize2_modal">
-                                    <span class="hover-underline-animation"> Know more </span>
-
-                                </button></div>
+                            <p> Total Prize Worth <b>$12,500</b></p>
+                            <p> Cash Prize of <b>INR 30,000</b></p>
+                            <div class="prizes-btn" style="margin-top: 15px;"> 
+                                <!-- <button class="cta" data-toggle="modal"data-target="#prize2_modal"><span class="hover-underline-animation"> Know more </span></button> -->
+                            </div>
+                            <div class="filler" style="height: 40px;"></div>
                         </div>
                         <div class="shadowOne"></div>
                         <div class="shadowTwo"></div>
@@ -607,13 +623,11 @@
                         <div class="service">
                             <div class="service-logo third-logo"> <img src="assets/img/third.png" alt="3rd"></div>
                             <h4 class="prize-heading">Third Prize</h4>
-                            <p> Total Prize of Worth <b>$10,000</b></p>
-                            <p> Cash Prize of <b>INR 25,000</b></p>
-                            <div class="prizes-btn" style="margin-top: 15px;"> <button class="cta" data-toggle="modal"
-                                    data-target="#prize3_modal">
-                                    <span class="hover-underline-animation"> Know more </span>
-
-                                </button>
+                            <p> Total Prize Worth <b>$10,000</b></p>
+                            <p> Cash Prize of <b>INR 20,000</b></p>
+                            <div class="prizes-btn" style="margin-top: 15px;"> 
+                                <!-- <button class="cta" data-toggle="modal" data-target="#prize3_modal"><span class="hover-underline-animation"> Know more </span> </button> -->
+                            <div class="filler" style="height: 40px;"></div>
                             </div>
                         </div>
                         <div class="shadowOne"></div>
@@ -715,9 +729,9 @@
                             <div class="service">
                                 <div class="service-logo best-hack-logo"> <img src="assets/img/sponsors/6.0/ai-brain.png"
                                         alt="5th"></div>
-                                <h4 class="hack-prize-heading" style="line-height: 1em;">Best GenAI<br />Project
+                                <h4 class="hack-prize-heading" style="line-height: 1em;">Best Beginner<br />Team
                                 </h4>
-                                <p> Cash Prize of <b>INR 10,000</b></p>
+                                <p> Cash Prize of <b>INR 5,000</b></p>
                                 <span class="hover-underline-animation" > + Swags and Goodies </span>
                                 
                                 <!-- <div class="prizes-btn" style="margin-top: 15px;"> <button class="btn-info"
@@ -1050,10 +1064,13 @@
 
     </section>
 
-     <section class="pb100 pt100" id=schedule>
+
+    <!-- Made the event schedule as hidden  -->
+     
+     <section style="display: none;" class="pb100 pt100" id=schedule>
             <div class=container>
-                <div class="section_title mb50">
-                    <h3 class="title event-schedule"> Event Schedule</h3>
+                <div class="section_title">
+                    <h3 class="title-dark"> Event Schedule</h3>
                 </div>
             </div>
             <img src="./assets/img/new_assets/Schedule mobile.svg" alt="schedule" class="schedule">
@@ -1061,18 +1078,24 @@
              <p class="clr-white coming-soon">
                 Coming Soon, Stay Tuned...
              </p>
-        </section> 
+    </section> 
 
 
     <section class="pt100 pb100" id=sponsors>
         <div class=container>
             <div class="section_title">
-                <h3 class="title-dark" data-aos="fade-right" data-aos-duration="1000"
-                    data-aos-anchor-placement="top-bottom">
-                    Our Last Edition's Sponsors</h3>
+                <h3 class="title-dark" data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">Our Sponsors</h3>
             </div>
+
+            <p class="clr-white sponsors-coming-soon ">
+                Sponsor Lineup to Be Revealed - Stay Connected!
+             </p>
         </div>
-        <div class="container">
+
+        <!-- Currently, the following section is hidden  -->
+
+        <div class="container" style="display: none;" >
+        <!-- <div class="container" > -->
             <div class="row title-sponsor">
                 <div class="col-md-12">
                     <div class="sponsor-heading" data-aos="fade-up" data-aos-duration="1000"
@@ -1406,41 +1429,47 @@
                         data-aos-anchor-placement="top-bottom">Community Partner</div>
                 </div>
 
-                <div class="com-pat">
-                <div class="col-xs-6 col-sm-6 col-md-2 ">
-                    <div class="sponsors-logo" data-aos="fade-up" data-aos-duration="1000"
-                        data-aos-anchor-placement="top-bottom"> <a href="https://www.mongodb.com/" target="_blank">
-                            <img src="assets/img/com_part/D CODE LOGO.svg" alt="MongoDB Logo" lazy> </a></div>
-                </div>
+               
 
                 <div class="col-xs-6 col-sm-6 col-md-2 ">
                     <div class="sponsors-logo" data-aos="fade-up" data-aos-duration="1000"
                         data-aos-anchor-placement="top-bottom"> <a href="https://www.mongodb.com/" target="_blank">
-                            <img src="assets/img/com_part/hack this fall logo.svg" alt="MongoDB Logo" lazy> </a></div>
+                            <img src="assets/img/community partners/D CODE LOGO.svg" alt="MongoDB Logo" lazy> </a></div>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-2 ">
+                    <div class="sponsors-logo" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-anchor-placement="top-bottom"> <a href="https://www.mongodb.com/" target="_blank">
+                            <img src="assets/img/community partners/hack this fall logo.svg" alt="MongoDB Logo" lazy> </a></div>
                 </div>
 
                 <div class="col-xs-6 col-sm-6 col-md-2">
                     <div class="sponsors-logo" data-aos="fade-up" data-aos-duration="1000"
                         data-aos-anchor-placement="top-bottom"> <a href="https://www.mongodb.com/" target="_blank">
-                            <img src="assets/img/com_part/hackquest_logo.3245c087 2.svg" alt="MongoDB Logo" lazy> </a></div>
+                            <img src="assets/img/community partners/hackquest_logo.3245c087 2.svg" alt="MongoDB Logo" lazy> </a></div>
                 </div>
 
                 <div class="col-xs-6 col-sm-6 col-md-2">
                     <div class="sponsors-logo" data-aos="fade-up" data-aos-duration="1000"
                         data-aos-anchor-placement="top-bottom"> <a href="https://www.mongodb.com/" target="_blank">
-                            <img src="assets/img/com_part/Namespace Logo FINAL.png" alt="MongoDB Logo" lazy> </a></div>
+                            <img src="assets/img/community partners//Namespace Logo FINAL.png" alt="MongoDB Logo" lazy> </a></div>
                 </div>
 
                 <div class="col-xs-6 col-sm-6 col-md-2">
                     <div class="sponsors-logo" data-aos="fade-up" data-aos-duration="1000"
                         data-aos-anchor-placement="top-bottom"> <a href="https://www.mongodb.com/" target="_blank">
-                            <img src="assets/img/com_part/theDevarmy-removebg-preview.svg" alt="MongoDB Logo" lazy> </a></div>
+                            <img src="assets/img/community partners/theDevarmy-removebg-preview.svg" alt="MongoDB Logo" lazy> </a></div>
                 </div>
+                <div class="col-xs-6 col-sm-6 col-md-2">
+                    <div class="sponsors-logo" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-anchor-placement="top-bottom"> <a href="https://www.mongodb.com/" target="_blank">
+                            <img src="assets/img/community partners/D CODE LOGO.svg" alt="MongoDB Logo" lazy> </a></div>
                 </div>
+               
+
             </div>
 
-
-        </div> <br>
+</div> <br>
 
         <center>
             <div class="row">
@@ -1474,7 +1503,7 @@
                 <center>
                 <div class="col-md-4">
                     <div class="team-box">
-                        <img src="assets/img/8.0_assets/Pulkit-new.png" alt="Pulkit Lather" width="90%">
+                        <img src="assets/img/8.0_assets/Pulkit-new.webp" alt="Pulkit Lather" width="90%">
                         <h2>Pulkit Lather</h2>
                         <h5>Lead Organizer</h5>
                         <h6>
@@ -1487,7 +1516,7 @@
     
                 <div class="col-md-4">
                     <div class="team-box">
-                        <img src="assets/img/8.0_assets/Harshit-Malviya.jpeg" alt="Harshit Malviya" width="90%">
+                        <img src="assets/img/8.0_assets/Harshit-Malviya.webp" alt="Harshit Malviya" width="90%">
                         <h2>Harshit Malviya</h2>
                         <h5>Lead Organizer</h5>
                         <h6>
@@ -1500,7 +1529,7 @@
 
                 <div class="col-md-4">
                     <div class="team-box">
-                        <img src="assets/img/8.0_assets/Amit-Singh-2.jpg" alt="Amit Singh" width="90%">
+                        <img src="assets/img/8.0_assets/Amit-Singh-2.webp" alt="Amit Singh" width="90%">
                         <h2>Amit Singh</h2>
                         <h5>Organizer</h5>
                         <h6>
@@ -1517,7 +1546,7 @@
 
                 <div class="col-md-4">
                     <div class="team-box">
-                        <img src="assets/img/8.0_assets/Soubhagya.jpg" alt="Soubhagya Mishra" width="90%">
+                        <img src="assets/img/8.0_assets/Soubhagya.webp" alt="Soubhagya Mishra" width="90%">
                         <h2>Soubhagya Mishra</h2>
                         <h5>Organizer</h5>
                         <h6>
@@ -1530,7 +1559,7 @@
 
                 <div class="col-md-4">
                     <div class="team-box">
-                        <img src="assets/img/8.0_assets/Abhishek-Thapa.jpg" alt="Abhishek Thapa" width="90%">
+                        <img src="assets/img/8.0_assets/Abhishek-Thapa.webp" alt="Abhishek Thapa" width="90%">
                         <h2>Abhishek Thapa</h2>
                         <h5>Event Director</h5>
                         <h6>
@@ -1543,7 +1572,7 @@
     
                 <div class="col-md-4">
                     <div class="team-box">
-                        <img src="assets/img/8.0_assets/Kartikey-Shahi.jpg" alt="Kartikey Shahi" width="90%">
+                        <img src="assets/img/8.0_assets/Kartikey-Shahi.webp" alt="Kartikey Shahi" width="90%">
                         <h2>Kartikey Shahi</h2>
                         <h5>Organizer</h5>
                         <h6>
@@ -1611,7 +1640,7 @@
                 <center>
                 <div class="col-md-3">
                     <div class="team-box">
-                        <img src="assets/img/team/mentors/anmol.jpeg" alt="Anmol" width="90%">
+                        <img src="assets/img/team/mentors/anmol.webp" alt="Anmol" width="90%">
                         <h2>Anmol Wassan </h2>
                         <h5>Advisor</h5>
                         <h6>
@@ -1624,7 +1653,7 @@
     
                 <div class="col-md-3">
                     <div class="team-box">
-                        <img src="assets/img/team/mentors/sajal.jpeg" alt="Sajal" width="90%">
+                        <img src="assets/img/team/mentors/sajal.webp" alt="Sajal" width="90%">
                         <h2>Sajal Bansal</h2>
                         <h5>Advisor</h5>
                         <h6>
@@ -1637,7 +1666,7 @@
 
                 <div class="col-md-3">
                     <div class="team-box">
-                        <img src="assets/img/team/mentors/harit-new.JPG" alt="Shyaamal Tripathi" width="90%">
+                        <img src="assets/img/team/mentors/harit-new.webp" alt="Harit" width="90%">
                         <h2>Harit Saini</h2>
                         <h5>Advisor</h5>
                         <h6>
@@ -1650,7 +1679,7 @@
     
                 <div class="col-md-3">
                     <div class="team-box">
-                        <img src="assets/img/team/mentors/utkarsh.jpeg" alt="Utkarsh" width="90%">
+                        <img src="assets/img/team/mentors/utkarsh.webp" alt="Utkarsh" width="90%">
                         <h2>Utkarsh Singh</h2>
                         <h5>Advisor</h5>
                         <h6>
@@ -1663,7 +1692,7 @@
 
                 <div class="col-md-3">
                     <div class="team-box">
-                        <img src="assets/img/team/mentors/shy.jpeg" alt="Shyaamal Tripathi" width="90%">
+                        <img src="assets/img/team/mentors/shy.webp" alt="Shyaamal Tripathi" width="90%">
                         <h2>Shyaamal Tripathi</h2>
                         <h5>Advisor</h5>
                         <h6>
@@ -1674,39 +1703,14 @@
                     </div>
                 </div>
     
-                <!-- <div class="col-md-3">
-                    <div class="team-box">
-                        <img src="assets/img/team/mentors/rishabh.jpg" alt="Rishabh" width="90%">
-                        <h2>Rishabh Sharma </h2>
-                        <h5>Advisor</h5>
-                        <h6>
-                            <a href="https://www.linkedin.com/in/therishabhsh/" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </h6>
-                    </div>
-                </div> -->
 
-                <div class="col-md-3">
-                    <div class="team-box">
-                        <img src="assets/img/team/mentors/vaibhav.jpeg" alt="Shyaamal Tripathi" width="90%">
-                        <h2>Vaibhav Srivastava</h2>
+                <div class="col-md-3" >
+                    <div class="team-box" style="height: 375px;">
+                        <img src="assets/img/team/nancy.webp" alt="Nancy" width="90%">
+                        <h2>Nancy Garg</h2>
                         <h5>Advisor</h5>
                         <h6>
-                            <a href="https://www.linkedin.com/in/vaibhav-srivastava-8673591ba/" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </h6>
-                    </div>
-                </div>
-    
-                <div class="col-md-3">
-                    <div class="team-box">
-                        <img src="assets/img/team/mentors/saksham.jpeg" alt="Saksham" width="90%">
-                        <h2>Saksham Duhan</h2>
-                        <h5>Advisor</h5>
-                        <h6>
-                            <a href="https://www.linkedin.com/in/saksham-duhan-48a536229/" target="_blank">
+                            <a href="https://www.linkedin.com/in/nancygarg0609/" target="_blank">
                                 <i class="fab fa-linkedin"></i>
                             </a>
                         </h6>
@@ -1722,7 +1726,7 @@
 
 
 
-    <section id="faq" class="pb100 pt100" style="background: #040709;">
+    <section id="faq" class="pb100 pt100">
         <div class="container">
             <div class="section_title mb50">
                 <h3 class="title-dark" data-aos="fade-right" data-aos-duration="1000"
@@ -1832,7 +1836,7 @@
                             hackathon?</a>
                         <div class="content">
                             <p>Yes, you are most welcome but you will need to have parent's consent to stay in the
-                                premises from 9th to 10th.</p>
+                                premises from 8th to 9th.</p>
                         </div>
                     </div>
                     <div class="accordion-item"> <a> Error 404 question not found?</a>
@@ -1867,7 +1871,7 @@
     </section>
 
     <section id="contact" class="pb100 pt25" style="
-        background: #040709;">
+        background: #000000;">
         <div class="container">
             <div class="row">
                 <div class="contact">
@@ -1935,27 +1939,23 @@
                             </div>
                             <div class="col-md-2">
                                 <div class=lgx-footer-single>
-                                    <!-- <h3 class="footer-title">Resources</h3> <a href="assets/docs/hackCBS_proposal_7.pdf"
-                                        target="_blank" class="resource_color">Sponsorship Brochure</a> -->
-                                    <!-- <br> <a href="Code-of-Conduct.pdf" target="_blank" class="resource_color">Code
+                                    <h3 class="footer-title">Resources</h3> <a href="assets/docs/hackCBS_proposal_8.pdf"
+                                        target="_blank" class="resource_color">Sponsorship Brochure</a>
+                                    <br> <a href="./assets/docs/Code_of_Conduct.pdf" target="_blank" class="resource_color">Code
                                         of
                                         Conduct</a>
-                                    <br> -->
+                                    <br>
                                     <h3 class="footer-title">Archives</h3>
-                                    <a href="https://v2.hackcbs.tech" target="_blank" class="resource_color">hackCBS
-                                        2.0</a>
+                                    <a href="https://v2.hackcbs.tech" target="_blank" 
+                                        class="resource_color">hackCBS 2.0</a>
                                     <br> <a href="https://v3.hackcbs.tech" target="_blank"
-                                        class="resource_color">hackCBS
-                                        3.0</a>
+                                        class="resource_color">hackCBS 3.0</a>
                                     <br> <a href="https://v4.hackcbs.tech" target="_blank"
-                                        class="resource_color">hackCBS
-                                        4.0</a>
+                                        class="resource_color">hackCBS 4.0</a>
                                     <br> <a href="https://v5.hackcbs.tech" target="_blank"
-                                        class="resource_color">hackCBS
-                                        5.0</a>
+                                        class="resource_color">hackCBS 5.0</a>
                                     <br> <a href="https://v6.hackcbs.tech" target="_blank"
-                                    class="resource_color">hackCBS
-                                    6.0</a>
+                                    class="resource_color">hackCBS 6.0</a>
                                 </div>
                             </div>
                             <div class="col-md-1">
@@ -2035,7 +2035,7 @@
                             <div class="col-sm-12 col-md-12 col-lg-12">
                                 <h5 style="color:white;">
                                     <center>
-                                        <a href="https://github.com/ItsMuskanGoyal" target="_blank" style="color: white; text-decoration: none;">
+                                        <a href="https://www.linkedin.com/in/amit-singh-502bba289/" target="_blank" style="color: white; text-decoration: none;">
                                             Designed with ❤️ by Team hackCBS
                                         </a>
                                     </center>
@@ -2116,7 +2116,10 @@
             })()
     </script>
     <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+
+    <!-- This is for devfolio  -->
     <script src="assets/js/devfolio.js"></script>
+
     <!-- <script type="module" src="assets/js/notify.js"></script> -->
     <script src="assets/js/faq.js"></script>
     <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
@@ -2133,6 +2136,8 @@
     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
     <script src="assets/libs/scroll.js"></script>
     <script src="assets/js/stars.js"></script>
+
+    <script src="./assets/js/navbar.js"></script>
 </body>
 
 </html>

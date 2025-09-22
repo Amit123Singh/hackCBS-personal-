@@ -184,6 +184,8 @@ html {
     align-items: center;
     margin-top: 4rem;
     margin-bottom: 15rem;
+      position: relative;
+  z-index: 5;
 }
 
 
@@ -197,13 +199,10 @@ html {
 }
 
 .banner-video-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);    
     display: block;
 }
 
-.banner-video-overlay img {
-    padding-bottom: 10px;
-}
 
 .date {
         font-weight: 900;
@@ -216,6 +215,10 @@ html {
         font-family: "Irish Grover", sans-serif;
     }
 
+.apply-button{
+      position: relative;
+     z-index: 5;
+}
 .button-register {
     display: flex;
     justify-content: center;
@@ -250,7 +253,6 @@ html {
 }
 
 .banner-button-style {
-    border: none;
     border: 3px #45b6b6 solid;
     outline: none;
     color: #DFEAF0;
@@ -341,10 +343,12 @@ button.button-register:after {
     }
 }
 
+
+
 #devfolio-button {
     align-items: center;
-    background-color: #5bc2e0;
-    border-radius: 0px;
+    background-color: var(--light-pink);
+    border-radius: 10px;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -352,12 +356,13 @@ button.button-register:after {
     font-weight: 600;
     text-align: center;
     justify-content: center;
+    z-index: 2 !important;
 }
 
 #devfolio-button:hover {
-    background-color: #218bab !important;
-    border-radius: 20px;
+    background-color: var(--pink) !important;
 }
+
 
 section#counter-stats {
     display: flex;
@@ -824,20 +829,42 @@ a {
     justify-content: space-between; /* Creates space between child elements */
     align-items: flex-start; /* Aligns items to the top of the container */
     gap: 20px; /* Adds space between the flex items */
-    padding: 40px 20px; /* Adds padding inside the container */
+    padding: 40px 20px 0px 20px; /* Adds padding inside the container */
     max-width: 1200px; /* Restricts the container's width */
     margin: 0 auto; /* Centers the container on the page */
 }
+#about::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%; /* adjust gradient height */
+  background: linear-gradient(to bottom, black, transparent);
+  pointer-events: none; /* so clicks still go to video if needed */
+}
+
 
 /* About Section */
 #about {
-    background: url('assets/img/New_bg/AboutOverlay.png') no-repeat center center;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
+        url('../img/backgrounds/mtt_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+
     background-size: cover; /* Ensures the background image covers the whole section */
     position: relative;
-    padding: 80px 0; /* Adds vertical padding for the section */
+    padding: 80px 0px 0px 0; /* Adds vertical padding for the section */
     color: #fff; /* Text color */
     text-align: left; /* Centers text content */
     z-index: 1; /* Ensures it's above background content */
+}
+
+@media only screen and (max-width:768px) {
+    #about-div p{
+        margin-right: 0px !important;
+    }
 }
 
 /* Flex Container for Content in About Section */
@@ -894,11 +921,12 @@ a {
     margin-top: 10px;
     font-size: 18px;
 }
-/* @media (max-width: 992px) {
-    .medium-ship {
-        max-width: 100%;
-    }
-} */
+@media only screen and (max-width:768px){
+    .stats h5 {
+    font-size: 16px;
+    line-height: 18px;
+}
+}
 
 .medium-ship {
     max-width: 100%;
@@ -1053,11 +1081,13 @@ a {
 }
 
 #sponsors {
-    background-color: #040709;
-    background-image: url('../img/new_assets/sponsor_bg.png'); 
-    background-size: cover;
+    background-color: #000000;
+    /* background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
+    url('../img/backgrounds/mtt_bg.png'); */
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
 }
 
 .sponsor-heading {
@@ -1280,12 +1310,12 @@ a {
 }
 
 .themes-bg-cover {
-    background-image: url('../img/new_assets/bg1.png');
-    /* Replace with your image path */
+        background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
+        url('../img/backgrounds/mtt_bg.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    /* Use cover to ensure the image covers the entire element */
 }
 
 
@@ -1536,16 +1566,15 @@ div.lgx-single-registration.recommended {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    background-image: linear-gradient(to bottom, #c0ecec, #88cece, #45b6b6, #247878);
+    background: #ffaaf6;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #667c97;
+    background: var(--light-pink);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #45b6b6;
+    background: var(--pink);
 }
 
 /*****Media*****/
@@ -1678,6 +1707,7 @@ div.lgx-single-registration.recommended {
     .stat-icons {
         font-size: 50px;
     }
+    
 
     .email-link {
         font-size: 30px;
@@ -1884,11 +1914,13 @@ div.lgx-single-registration.recommended {
 /* Add background image for the Prizes section */
 #prizes {
     background-color: #040709;
-    background-image: url('../img/new_assets/prizes_bg.png'); 
-    /* background-color: rgb(240, 245, 250); */
-    background-size: cover;
+        background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
+        url('../img/backgrounds/mtt_bg.jpg');
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
+
 }
 
 .prize-container {
@@ -2019,6 +2051,8 @@ h4.hack-prize-heading {
 
 .sponsor_us_btn .hover-underline-animation {
     color: white;
+    border: 2px solid var(--light-pink);
+    padding: 10px 20px;
 }
 
 
@@ -2035,9 +2069,9 @@ h4.hack-prize-heading {
     width: 100%;
     transform: scaleX(0);
     height: 2px;
-    bottom: 0;
+    bottom: 0px;
     left: 0;
-    background-color: #007bff;
+    background-color: var(--light-pink);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -2216,8 +2250,8 @@ h4.hack-prize-heading {
 }
 
 #schedule {
-    background-color: #1f2631;
-    background-image: url('/assets/img/New_bg/PrizesOverlay.png');
+    background-color: #000000;
+    /* background-image: url('/assets/img/New_bg/PrizesOverlay.png'); */
 }
 
 .schedule {
@@ -2322,7 +2356,7 @@ h4.hack-prize-heading {
     background-color: #040709;
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
-        url('../img/new_assets/mtt_bg.png');
+        url('../img/backgrounds/mtt_bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -2353,6 +2387,9 @@ h4.hack-prize-heading {
 
     transition: all 0.3s ease;
     backdrop-filter: blur(40px);
+}
+@media only screen and (max-width:768px){
+    .team-box{margin-bottom: 40px;}
 }
 
 .team-box:hover {
@@ -2397,6 +2434,8 @@ h4.hack-prize-heading {
     font-size: 2.5rem;
     color: #c72dff !important;
     margin-bottom: 20px;
+    font-family: "Irish Grover", sans-serif;
+    letter-spacing: 5px;
 }
 
 .title-dark.clr-blue {
@@ -2406,6 +2445,28 @@ h4.hack-prize-heading {
 .title-dark.clr-white {
     color: #f8f8f8;
 }
+
+
+
+#faq{
+        background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
+        url('../img/backgrounds/mtt_bg.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .fa-calendar,
 .fa-clock {
@@ -2430,10 +2491,10 @@ lord-icon {
 /* Footer background with image and black overlay */
 .lgx-footer>.lgx-inner-footer {
     position: relative;
-    background-image: url('../img/new_assets/footer-bg2.png');
+    background-image: url('../img/backgrounds/footer_bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top;
 }
 
 /* Black overlay */
@@ -3046,6 +3107,17 @@ lord-icon {
     overflow: hidden;
 }
 
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('../videos/video_placeholder.png') center center no-repeat;
+    background-size: cover;
+}
+
 .banner-parallax::before {
     content: '';
     position: absolute;
@@ -3068,6 +3140,24 @@ lord-icon {
     z-index: -1;
     transform: translate(-50%, -50%);
     object-fit: cover;
+}
+
+
+
+
+
+
+
+
+.video-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%; /* adjust gradient height */
+  background: linear-gradient(to top, black, transparent);
+  pointer-events: none; /* so clicks still go to video if needed */
 }
 
 .form-container {
@@ -3126,8 +3216,13 @@ lord-icon {
 
 
 #glimpses-new {
-   background: url('../img/new_assets/bg2.png') no-repeat center center;
-    padding: 50px 0;
+       background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
+        url('../img/backgrounds/mtt_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    padding: 0px 0px 50px 0px;
 }
 
 .glimpses-new-container {
@@ -3220,10 +3315,272 @@ lord-icon {
 
 .coming-soon {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 20px;
+}
+
+.sponsors-coming-soon{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
 }
 
     /* for pc  */
     
 
+
+
+
+/* For new navbar==========================================  */
+.nav-container{
+    z-index: 100;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+}
+
+.nav-container li{
+    list-style: none;
+}
+.nav-container a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .nav-branding{
+    height: 110%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.4s ease-in;
+    overflow: hidden;
+}
+.nav-branding img{
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease-in;
+}
+
+
+
+
+.navbar{
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 24px;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+
+    transition:all 0.6s;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-radius: 40px;
+    transition: background-color 0.4s ease-in,padding 0.4s ease-in;
+    padding: 10px 25px;
+    
+}
+/* scrolled  */
+.navbar.scrolled .nav-menu {
+    background-color: hsla(284, 100%, 63%, 0.1);
+    border: 1px solid #cc40ff;
+    backdrop-filter: blur(30px);
+    padding: 15px 40px;
+}
+
+
+
+.nav-link{
+    transition: all 0.4s;
+}
+.nav-link:hover{
+    color: #dc7bff;
+}
+
+.hamburger{
+    display: none;           /* By default, it won't show*/
+    cursor: pointer;
+    padding: 8px 11px;
+    border-radius: 10px;
+    background-color: hsla(284, 100%, 63%, 0.1);
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out ;
+    background-color: #cc40ff;
+}
+
+
+
+
+
+@media only screen and (max-width:768px) {
+    .hamburger{
+        display:block;  /*To show the hamburger*/
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    /* Understand from here */
+    .navbar .nav-menu{
+        position: fixed;      
+        top: 120px;
+        left: 5%;
+        gap: 0px;
+        flex-direction: column;
+        width: calc(90%);
+        transition:all 0.6s;
+        max-height: 0px;
+        opacity: 0;
+        background-color: hsla(284, 100%, 63%, 0.1);
+        border: 1px solid #cc40ff;
+        backdrop-filter: blur(30px);
+
+    }
+    .navbar.scrolled .nav-menu{
+        top: 90px;
+    }
+    .nav-item{
+        padding: 16px 0px; 
+    }
+
+    .nav-menu.active{
+        max-height: 1000px;
+        opacity: 1;
+    }
+
+
+    /* additional */
+    /* 1 -> Animated the tabs of the navbar */
+
+    /* initial hidden state for nav links */
+    .nav-menu .nav-item {
+        opacity: 0;
+        transform: translateX(-60px);
+        transition: all 0.4s ease;
+    }
+
+    /* visible state when nav-menu is active */
+    .nav-menu.active .nav-item {
+        opacity: 1;
+        transform: translateX(0);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        
+        .nav-menu.active .nav-item:nth-child(n) {
+        transition-delay: calc(0.1s * var(--delay));
+        }
+
+
+    /* logo  */
+    .navbar .nav-branding{
+        height: 80%;
+    }
+    .navbar{
+        font-size: 16px;
+        justify-content: right;
+        margin-top: 0px;
+        background-color: hsla(284, 100%, 63%, 0.314);
+    }
+
+
+    /* on scrolling  */
+   .navbar.scrolled .nav-branding{
+    height: 70%;
+    }
+    
+    .navbar.scrolled{
+        min-height: 70px;
+    }
+    }
+
+
+
+
+
+
+
+/* mlh logo  */
+#mlh-trust-badge-logo{
+    position: fixed;
+    z-index: 1001;
+    top: 0px;
+    width: 80px;
+    left: calc(95% - 80px);
+    transition:all 0.6s;
+
+
+}
+#mlh-trust-badge-logo img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.nav-menu.active ~ #mlh-trust-badge-logo{
+    opacity: 0;
+}
+
+
+/* for pc  */
+.navbar.scrolled .nav-branding{
+    transform: translateY(-200px) scale(0.5);
+}
+.navbar.scrolled #mlh-trust-badge-logo {
+    transform: translateY(-200px) scale(0.5);
+}
+
+
+
+/* for mobile */
+@media only screen and (max-width:768px){
+    #mlh-trust-badge-logo{
+        top: 100px;
+        width: 50px;
+        left: calc(95% - 50px);
+}
+    .navbar.scrolled #mlh-trust-badge-logo{
+        top: 70px;
+}
+
+    .navbar.scrolled .nav-branding{
+    transform: translateY(-50%);
+}
+    .navbar.scrolled #mlh-trust-badge-logo {
+    transform: none;
+}
+}
+
+
+
+
+/* socials  */
+.list-inline li{
+    padding: 2px 6px !important;
+    border-radius: 50%;
+    transition: all 200ms linear;
+}
+.list-inline li:hover{
+    background-color: rgba(255, 138, 234, 0.368) !important;
+}

@@ -1,1 +1,1 @@
-HackCBS 7.0 Website LIVE
+HackCBS 8.0 Website LIVE

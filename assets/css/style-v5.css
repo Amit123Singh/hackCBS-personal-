@@ -2378,60 +2378,9 @@ h4.hack-prize-heading {
 
 
 
-/* Team Cards======================================= */
-.team-box {
-    background: linear-gradient(145deg, #59003e1c, #4f007738); /* subtle gradient */
-    margin: 2rem auto;
-    padding: 2rem 1.5rem;
-    width: 90%;
-    max-width: 350px;
-    border-radius: 16px;
-    border: 1px solid rgba(199, 45, 255, 0.2);
-    box-shadow: 0 8px 20px rgba(199, 45, 255, 0.15),0 4px 10px rgba(0, 0, 0, 0.05);
-
-    transition: all 0.3s ease;
-    backdrop-filter: blur(40px);
-}
-@media only screen and (max-width:768px){
-    .team-box{margin-bottom: 40px;}
-}
-
-.team-box:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(199, 45, 255, 0.25),0 6px 12px rgba(0, 0, 0, 0.08);
-    border-color: rgba(199, 45, 255, 0.5);
-}
-
-
-.team-box h2 {
-    color: #ffffff !important;
-    font-size: 2.25rem;
-    font-weight: 600;
-    line-height: 2.5rem;
-}
-
-
-.team-box h5 {
-    color: #c5c5c5;
-    font-size: 1.8rem;
-    line-height: 1.6;
-    text-align: center;
-}
 
 
 
-.team-box h6 {
-    font-size: 2.5rem;
-    cursor: pointer;
-}
-
-.team-box h6 a {
-    color: var(--pink); 
-}
-
-.team-box h6 a:hover {
-    color: var(--light-pink);
-}
 
 
 .title-dark {
@@ -3590,3 +3539,92 @@ lord-icon {
 .list-inline li:hover{
     background-color: rgba(255, 138, 234, 0.368) !important;
 }
+
+
+/* For blockchain card  */
+@media only screen and (max-width:1000px) { .blockchain-card{display: block;}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Team Cards======================================= */
+
+/* for team and mentor cards  */
+.team-member-cards{
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    text-align: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+
+
+
+
+.team-box {
+    background: linear-gradient(145deg, #59003e1c, #4f007738); 
+    padding: 2rem 2rem;
+    max-width: 300px;
+    border-radius: 16px;
+    border: 1px solid rgba(199, 45, 255, 0.2);
+    box-shadow: 0 8px 20px rgba(199, 45, 255, 0.15),0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(40px);
+}
+
+
+.team-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(199, 45, 255, 0.25),0 6px 12px rgba(0, 0, 0, 0.08);
+    border-color: rgba(199, 45, 255, 0.5);
+}
+
+
+.team-box h2 {
+    color: #ffffff !important;
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+
+
+.team-box h5 {
+    color: #c5c5c5;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.team-box h6 a {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--pink); 
+}
+
+.team-box h6 a:hover {
+    color: var(--light-pink);
+}
+
+
+
+
+
+
+

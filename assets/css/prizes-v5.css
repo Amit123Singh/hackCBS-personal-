@@ -183,3 +183,42 @@
     line-height: 2.8rem;
     position: relative
 }
+
+
+/* Benefits card  */
+.benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.benefits .benefits-card {
+  text-align: center;
+  background: linear-gradient(145deg, #59003e1c, #4f007738);
+  border: 5px solid #c72dff;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px 12px 0;
+  bottom: 0%;
+}
+
+.benefits-card h1 {
+  color: white;
+  margin: 10px;
+  line-height: normal;
+  padding-bottom: 10px;
+}
+
+.benefits-card h4 {
+  color: #c5c5c5;
+  font-weight: normal;
+}
+
+.benefits-card .button {
+  border: 2px solid #c72dff;
+  border-radius: 10px;
+  margin-top: 25px;
+  display: inline-block;
+  padding: 10px 20px;
+}
